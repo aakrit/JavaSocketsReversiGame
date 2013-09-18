@@ -1,0 +1,15 @@
+Java Multi-Player Reversi Game with BSD Sockets
+
+This game can currently only be played with two players and 48 observers max. the 1st two players that connect to the server will be assigned a board color to player, all remaining players that connect will be observers.
+
+A newer version of the game using threading for more than 2 players and multiple boards will likely be updated soon
+
+The begin the game, type 'make' at the command line to run the makefile which will compline the java source or manually compile the files yourself. Then run the ReversiServer.class file by typing 'make start' or manually to start the server.
+
+Once the server is running, the clients can coneects via telnet by typing: 'telnet [server ip address] 1111' since 1111 is the default port the server uses.
+
+
+The Server can be shut off by sending a SIGINT kill signal to the process from the terminal using "ctrl+c" or "kill -9 [psid]" from another terminal.
+
+
+To clean exec files type: make clean
